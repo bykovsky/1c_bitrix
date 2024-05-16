@@ -1,3 +1,6 @@
+<?
+$start = microtime(true);
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,11 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=<?=mt_rand(0,999999)?>">
 </head>
 <body>
 <header class="header">
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">1C Bitrix</div>
+      <div class="col-md-10">
+        <nav class="header__nav">
+          <ul class="header-nav">
+            <li class="header-nav__item"><a href="index.php" class="header-nav__link">Главная</a></li>
+            <li class="header-nav__item"><a href="cicles.php" class="header-nav__link">Циклы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
 <main>
 <!-- end head -->
