@@ -12,3 +12,7 @@ window.onblur = () => {
   // Снижение активности, если пользователь перешел на другую вкладку
 };
 
+let reloader = document.querySelector('.reload');
+reloader.addEventListener("click", e => {
+  window.location.reload(true);
+})
