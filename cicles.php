@@ -70,12 +70,12 @@ $d = $b^2 - 4 * $a * $c;
 <h3>Вывод через IF</h3>
 <?
 if ($d > 0){
-    echo ('корень №1 = '.round($x1 = (-$b + sqrt($d)) / (2 * $a), 2)).'<br>';
-    echo ('корень №2 = '.round($x2 = (-$b - sqrt($d)) / (2 * $a), 2));
+  echo ('корень №1 = '.round($x1 = (-$b + sqrt($d)) / (2 * $a), 2)).'<br>';
+  echo ('корень №2 = '.round($x2 = (-$b - sqrt($d)) / (2 * $a), 2));
 } elseif ($d < 0) {
-    echo "нет корней";
+  echo "нет корней";
 } else {
-    echo ('корень = '.$x = (-$b + sqrt($d)) / (2 * $a));
+  echo ('корень = '.$x = (-$b + sqrt($d)) / (2 * $a));
 }
 ?>
   </div>
@@ -83,16 +83,16 @@ if ($d > 0){
 <h3>Вывод через SWITCH</h3>
 <?
 switch ($d) {
-    case 0:
-        echo ('корень = '.round($x = (-$b + sqrt($d)) / (2 * $a), 2));
-        break;
-    case ($d > 0):
-        echo ('корень №1 = '.round($x1 = (-$b + sqrt($d)) / (2 * $a), 2)).'<br>';
-        echo ('корень №2 = '.round($x2 = (-$b - sqrt($d)) / (2 * $a), 2));
-        break;
-    case ($d < 0):
-        echo "нет корней";
-        break;
+  case 0:
+    echo ('корень = '.round($x = (-$b + sqrt($d)) / (2 * $a), 2));
+    break;
+  case ($d > 0):
+    echo ('корень №1 = '.round($x1 = (-$b + sqrt($d)) / (2 * $a), 2)).'<br>';
+    echo ('корень №2 = '.round($x2 = (-$b - sqrt($d)) / (2 * $a), 2));
+    break;
+  case ($d < 0):
+    echo "нет корней";
+    break;
 }
 ?>
   </div>
