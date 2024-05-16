@@ -68,7 +68,7 @@ main {
   list-style: none;
 }
 .header-nav__item {
-
+  display: flex;
 }
 
 .header-nav__item:not(:last-child) {
