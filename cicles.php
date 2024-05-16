@@ -201,14 +201,19 @@ for ($num=5; $num<=13; $num++) {
 <?
 $num = 1000;
 $s = 0;
+$arr = [];
 while ($num > 50) {
   $num = $num/2;
-  if ($num > 50) {
-    echo $num.'<br>';
-    $s++;
-  }
+  echo $num.'<br>';
+  $tmp = array_push($arr, $num);
+  $s++;
+  //$num = $num/2;
+  // if ($num > 50) {
+  //   echo $num.'<br>';
+  //   $s++;
+  // }
 }
-echo 'количество итераций - '.$s;
+echo 'количество итераций - '.$s.'. Последнее число - '.end($arr);
 
 ?>
   </div>
@@ -216,14 +221,18 @@ echo 'количество итераций - '.$s;
     <h4>Цикл FOR</h4>
 <?
 $num = 1000;
-$i = 0;
-for($num; $num > 50; $i++) {
+$s = 0;
+$arr = [];
+for($num; $num > 50; $s++) {
   $num = $num/2;
-  if ($num > 50) {
-    echo $num.'<br>';
-  }
+  echo $num.'<br>';
+  $tmp = array_push($arr, $num);
+  // $num = $num/2;
+  // if ($num > 50) {
+  //   echo $num.'<br>';
+  // }
 }
-echo 'количество итераций - '.($i-1);
+echo 'количество итераций - '.$s.'. Последнее число - '.end($arr);
 ?>
   </div>
 </div>
