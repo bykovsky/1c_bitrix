@@ -16,15 +16,20 @@ $start = microtime(true);
 <body>
 <header class="header">
   <div class="container">
-    <div class="row">
+    <div class="row header__row">
       <div class="col-md-2">1C Bitrix</div>
-      <div class="col-md-10">
-        <nav class="header__nav">
-          <ul class="header-nav">
-            <li class="header-nav__item"><a href="index.php" class="header-nav__link">Главная</a></li>
-            <li class="header-nav__item"><a href="cicles.php" class="header-nav__link">Циклы</a></li>
-          </ul>
-        </nav>
+      <pucture class="col-md-10">
+        <div class="header__wrapper">
+          <nav class="header__nav">
+            <ul class="header-nav">
+              <li class="header-nav__item"><a href="index.php" class="header-nav__link">Главная</a></li>
+              <li class="header-nav__item"><a href="cicles.php" class="header-nav__link">Циклы</a></li>
+            </ul>
+          </nav>
+          <picture class="header__avatar">
+            <img class="header__avatar-img" src="assets/img/avatar.jpg" alt="userpic">
+          </picture>
+        </div>
       </div>
     </div>
   </div>
