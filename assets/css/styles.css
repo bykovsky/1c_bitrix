@@ -134,3 +134,12 @@ main {
   justify-content: center;
   background-color: var(--task-bg);
 }
+
+.main-content__title{
+  margin-bottom: 2rem;
+}
+
+.main-content__content-block {
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
