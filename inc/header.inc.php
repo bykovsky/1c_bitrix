@@ -12,6 +12,11 @@ $start = microtime(true);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css?v=<?=mt_rand(0,999999)?>">
+
+    <!--link rel="stylesheet" href="assets/css/default.min.css">
+    <script src="assets/js/go.min.js"></script>
+    <script src="assets/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script-->
 </head>
 <body>
 <header class="header">

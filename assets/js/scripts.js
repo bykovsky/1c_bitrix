@@ -16,3 +16,9 @@ let reloader = document.querySelector('.reload');
 reloader.addEventListener("click", e => {
   window.location.reload(true);
 })
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((el) => {
+    hljs.highlightElement(el);
+  });
+});
