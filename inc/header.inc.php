@@ -29,6 +29,8 @@ $start = microtime(true);
             <ul class="header-nav">
               <li class="header-nav__item"><a href="index.php" class="header-nav__link">Главная</a></li>
               <li class="header-nav__item"><a href="cicles.php" class="header-nav__link">Циклы</a></li>
+              <li class="header-nav__item"><a href="arrays.php" class="header-nav__link">Массивы</a></li>
+              <li class="header-nav__item"><a href="strings.php" class="header-nav__link">Строки</a></li>
             </ul>
           </nav>
           <picture class="header__avatar">
